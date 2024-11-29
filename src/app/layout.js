@@ -26,6 +26,7 @@
 //     </html>
 //   );
 // }
+import './mobile.css'
 const Home = () =>{
   return(
 <html>

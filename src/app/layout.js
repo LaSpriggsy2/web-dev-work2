@@ -30,7 +30,7 @@
 
 // import Image from "next/image";
 "use client"
-import { Image } from "./images/logo.jpg";
+import Image from 'next/image';
 import './styles/mobile.css'
 import './styles/desktop.css'
 import Facilities from "./Components/Facilities";
@@ -83,7 +83,7 @@ const Home = () =>{
   <body>
     <header>
     <div className="homepageHeader">
-        <img src={ Image } width="112px" height="100px" alt="cantor college logo" className="cantorLogo"/>
+        <img src="/images/logo.jpg" width="112px" height="100px" alt="cantor college logo" className="cantorLogo"/>
         <h1 className="cantorTitle">Cantor Home</h1>
       </div>
       <div className="navigationBar">
@@ -117,7 +117,7 @@ const Home = () =>{
 <div className="infoBox" id="welcomeBox">
 <h2 id="aboutUsTitle"><b>About Us</b></h2>
   
-  <img src="" alt="image of cantor college" width="1000" height="750" 
+  <Image src="" alt="image of cantor college" width="1000" height="750" 
 className="welcomeImage" id="cantorPics" />
 
 <p id="welcomeText">
@@ -132,9 +132,7 @@ both as a student and in your future career.
 </p>
 </div>
 </main>
-<footer>
-{/* <Footer></Footer> */}
-</footer>
+<Footer></Footer>
 </body>
 </html>
 

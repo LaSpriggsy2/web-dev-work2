@@ -1,8 +1,8 @@
 import React from "react";
 const Footer = () =>{
     return(
-        <div>
-            <div className="contactUs">
+        <footer>
+        <div className="contactUs">
         Contact us:
         <div className="mediaLinks">
             <a href="https://www.facebook.com">
@@ -29,7 +29,7 @@ const Footer = () =>{
       <div className="copyrightNotice">
         <a href="https://www.gov.uk/guidance/copyright-notices">COPYRIGHT NOTICE</a>
       </div>
-        </div>
+      </footer>
     )
 }
 

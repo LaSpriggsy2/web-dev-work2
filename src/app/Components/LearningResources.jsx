@@ -1,7 +1,7 @@
 import React from "react";
 const LearningResources = () =>{
     return(
-        <div>
+        <div className="hidden" id="learningResources">
              <h1 className="sectionTitle">Rules Governing the Use of the Library and Resource Centre</h1>
             <div className="sectionInfo">
             <div className="infoBox">

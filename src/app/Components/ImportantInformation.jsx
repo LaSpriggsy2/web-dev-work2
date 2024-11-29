@@ -1,7 +1,7 @@
 import React from "react";
 const ImportantInformation = () =>{
     return(
-        <div>
+        <div className="hidden" id="importantInformation"> 
             <h2 className="sectionTitle">Important Information</h2>
             <div className="sectionInfo">
         <div className="infoBox">

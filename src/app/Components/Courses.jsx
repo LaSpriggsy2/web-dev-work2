@@ -25,7 +25,7 @@ const Courses = () =>{
 // },[])
 // }
     return(
-        <div>
+        <div className="hidden" id="courses">
             <h2 className="sectionTitle">Courses at Cantor College</h2>
             <div className="sectionInfo">
             <div className="infoBox">

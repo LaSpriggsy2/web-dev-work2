@@ -29,18 +29,57 @@
 
 
 // import Image from "next/image";
+"use client"
 import { Image } from "./images/logo.jpg";
 import './styles/mobile.css'
 import './styles/desktop.css'
 import Facilities from "./Components/Facilities";
 import Footer from "./Components/Footer";
-import LearningResources from "./Components/LearningReasources";
+import LearningResources from "./Components/LearningResources";
 import ImportantInformation from "./Components/ImportantInformation";
 import WorkingWithBusinesses from "./Components/WorkingWithBusinesses";
 import Courses from "./Components/Courses";
+import { useEffect } from "react";
+import CampusMap from "./Components/CampusMap";
 const Home = () =>{
-  return(
-<html>
+  useEffect(()=>{
+
+    let sectionBars = document.querySelectorAll(".sectionBar");
+    
+    console.dir(sectionBars);
+    let hiddenSections = document.querySelectorAll(".hidden");
+   
+    let bar = 0;
+    for(let i=0; i<sectionBars.length; i++){
+      sectionBars[i].addEventListener("click", RevealSection);
+      
+    }
+    
+    function RevealSection(ev){
+      console.dir(ev.target.classList[0]);
+      let sectionName = ev.target.classList[0];
+      console.dir(sectionName);
+      let sectionElement = document.getElementById(sectionName);
+      console.dir(sectionElement);
+      if(sectionElement.classList.contains("hidden")){
+        let sections = document.querySelectorAll(".section");
+        console.dir(sections);
+        if(sections.length==1){
+          document.querySelector(".section").setAttribute("class","hidden");
+          document.getElementById("selectedBar").removeAttribute("id");
+        }
+        document.querySelector("."+sectionName).setAttribute("id","selectedBar");
+        sectionElement.setAttribute("class", "section");
+      }
+      else if(sectionElement.classList.contains("section")){
+        sectionElement.setAttribute("class", "hidden");
+        document.getElementById("selectedBar").removeAttribute("id");
+        
+      }
+    }
+  });
+    return(
+      <html>
   <body>
     <header>
     <div className="homepageHeader">
@@ -71,6 +110,7 @@ const Home = () =>{
     <main>
 <Courses></Courses>
 <Facilities></Facilities>
+<CampusMap></CampusMap>
 <LearningResources></LearningResources>
 <ImportantInformation></ImportantInformation>
 <WorkingWithBusinesses></WorkingWithBusinesses>

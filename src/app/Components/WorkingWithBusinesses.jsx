@@ -1,7 +1,7 @@
 import React from "react";
 const WorkingWithBusinesses = () =>{
     return(
-        <div>
+        <div className="hidden" id="workingWithBusinesses">
         <h2 className="sectionTitle">Working with Businesses</h2>
             <div className="infoBox">
                 <div>

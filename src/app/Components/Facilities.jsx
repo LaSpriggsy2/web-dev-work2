@@ -1,7 +1,7 @@
 import React from "react";
 const Facilities = () =>{
     return(
-        <div>
+        <div className="hidden" id="facilities">
             <h2 className="sectionTitle">Facilities at Cantor College</h2>
             <div className="sectionInfo" id="facilitiesInfo">
                 

@@ -1,4 +1,5 @@
 import React from "react";
+
 const CampusMap = () =>{
     return(
         <div>
@@ -10,7 +11,7 @@ const CampusMap = () =>{
             </div>
             <div className="infoBox">
                 Cantor College Campus Map
-                <img src="" width="4000" height="2828" alt="Map of Cantor College Campus" id="campusMapImage"/>
+                <img src="/images/bigCampusMap.jpg" width="4000" height="2828" alt="Map of Cantor College Campus" id="campusMapImage"/>
             {/* Martin if you're reading this, I know that is a humongous image; but because it's a map, 
              the detail and quality of this image is actually important. Please don't lower my mark because of this. */}
                 <a href="" download="bigCampusMap.jpg">Click here to download image</a>

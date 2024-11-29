@@ -77,6 +77,22 @@ const Home = () =>{
         
       }
     }
+    let aboutUsImageAr = [
+      './images/cantorPic2.jpg',
+      './images/cantorPic1.jpg'
+      
+    ];
+    let aboutUsImage = document.getElementById("cantorPics");
+let imageCounter1 = 0;
+aboutUsImage.setAttribute("src", "images/cantorPic1.jpg")
+function chgAboutUsImage(){
+    if(imageCounter1 == aboutUsImageAr.length){imageCounter1=0;}
+    aboutUsImage.setAttribute("src", aboutUsImageAr[imageCounter1]);
+    imageCounter1++
+    console.info(imageCounter1);
+}
+setInterval(chgAboutUsImage, 10000);
+
   });
     return(
       <html>

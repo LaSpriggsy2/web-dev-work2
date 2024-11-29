@@ -1,5 +1,24 @@
 import React from "react";
+import { useEffect } from "react";
 const Facilities = () =>{
+useEffect(()=>{
+    let facilitiesImageAr = [
+        './images/cantorAtriumInside2.jpg',
+        './images/cantorAtriumInside3.jpg',
+        './images/cantorAtriumInside1.jpg'
+        
+      ];
+      let facilitiesImage = document.getElementById("cantorAtrium");
+let imageCounter2 = 0;
+facilitiesImage.setAttribute("src", "images/cantorAtriumInside1.jpg")
+function chgFacilitiesImage(){
+    if(imageCounter2 == facilitiesImageAr.length){imageCounter2=0;}
+    facilitiesImage.setAttribute("src", facilitiesImageAr[imageCounter2]);
+    imageCounter2++
+    console.info(imageCounter2);
+}
+setInterval(chgFacilitiesImage, 5000);
+})
     return(
         <div className="hidden" id="facilities">
             <h2 className="sectionTitle">Facilities at Cantor College</h2>

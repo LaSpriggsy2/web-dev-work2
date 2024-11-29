@@ -65,6 +65,7 @@ header{
     float: left;
     width: 40%;
     height: auto;
+    transition: transform 3s ease-in-out;
   }
   .navigationBar{
     background-image: url(../images/background.jpg);

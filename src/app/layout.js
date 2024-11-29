@@ -28,15 +28,20 @@
 // }
 
 
+// import Image from "next/image";
+import { Image } from "./images/logo.jpg";
 import './styles/mobile.css'
 import './styles/desktop.css'
+import Facilities from "./Components/Facilities";
+import Footer from "./Components/Footer";
+import LearningResources from "./Components/LearningReasources";
 const Home = () =>{
   return(
 <html>
   <body>
     <header>
     <div className="homepageHeader">
-        <img src="" width="112px" height="100px" alt="cantor college logo" className="cantorLogo"/>
+        <img src={ Image } width="112px" height="100px" alt="cantor college logo" className="cantorLogo"/>
         <h1 className="cantorTitle">Cantor Home</h1>
       </div>
       <div className="navigationBar">
@@ -62,6 +67,8 @@ const Home = () =>{
     </header>
     <main>
 
+<Facilities></Facilities>
+<LearningResources></LearningResources>
 <div className="infoBox" id="welcomeBox">
 <h2 id="aboutUsTitle"><b>About Us</b></h2>
   
@@ -81,7 +88,7 @@ both as a student and in your future career.
 </div>
 </main>
 <footer>
-
+{/* <Footer></Footer> */}
 </footer>
 </body>
 </html>

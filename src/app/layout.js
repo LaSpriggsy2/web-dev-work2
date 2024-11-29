@@ -26,11 +26,41 @@
 //     </html>
 //   );
 // }
+
+
 import './mobile.css'
+import './desktop.css'
 const Home = () =>{
   return(
 <html>
   <body>
+    <header>
+    <div className="homepageHeader">
+        <img src="" width="112px" height="100px" alt="cantor college logo" className="cantorLogo"/>
+        <h1 className="cantorTitle">Cantor Home</h1>
+      </div>
+      <div className="navigationBar">
+            <div className="courses sectionBar">
+                Courses
+            </div>
+            <div className="facilities sectionBar">
+                Facilities
+            </div>
+            <div className="campusMap sectionBar">
+                Campus Map and Where to Find Us
+            </div>
+            <div className="learningResources sectionBar">
+                Learning Resources
+            </div>
+            <div className="importantInformation sectionBar">
+                Important Information
+            </div>
+            <div className="workingWithBusinesses sectionBar">
+                Working with Businesses
+            </div>
+      </div>
+    </header>
+    <main>
 
 <div className="infoBox" id="welcomeBox">
 <h2 id="aboutUsTitle"><b>About Us</b></h2>
@@ -49,6 +79,10 @@ Whatever your ambitions, our learning and support can help to get the most out o
 both as a student and in your future career.
 </p>
 </div>
+</main>
+<footer>
+
+</footer>
 </body>
 </html>
 

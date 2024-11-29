@@ -35,6 +35,9 @@ import './styles/desktop.css'
 import Facilities from "./Components/Facilities";
 import Footer from "./Components/Footer";
 import LearningResources from "./Components/LearningReasources";
+import ImportantInformation from "./Components/ImportantInformation";
+import WorkingWithBusinesses from "./Components/WorkingWithBusinesses";
+import Courses from "./Components/Courses";
 const Home = () =>{
   return(
 <html>
@@ -66,9 +69,11 @@ const Home = () =>{
       </div>
     </header>
     <main>
-
+<Courses></Courses>
 <Facilities></Facilities>
 <LearningResources></LearningResources>
+<ImportantInformation></ImportantInformation>
+<WorkingWithBusinesses></WorkingWithBusinesses>
 <div className="infoBox" id="welcomeBox">
 <h2 id="aboutUsTitle"><b>About Us</b></h2>
   

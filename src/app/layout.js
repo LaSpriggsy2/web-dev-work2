@@ -28,8 +28,8 @@
 // }
 
 
-import './mobile.css'
-import './desktop.css'
+import './styles/mobile.css'
+import './styles/desktop.css'
 const Home = () =>{
   return(
 <html>

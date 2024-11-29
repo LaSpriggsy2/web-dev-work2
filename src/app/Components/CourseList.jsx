@@ -1,7 +1,5 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import './computingCourseList.json'
-import './designCourseList.json'
 const CourseList = () =>{
 
     let courseType = "computing";

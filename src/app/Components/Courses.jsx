@@ -3,6 +3,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import './computingCourseList.json'
 import './designCourseList.json'
+import CourseList from "./CourseList";
 
 const Courses = () =>{
 //     let courseType = "computing";
@@ -113,9 +114,9 @@ useEffect(()=>{
 }
     return(
         <div>
-            <h2 class="sectionTitle">Courses at Cantor College</h2>
-            <div class="sectionInfo">
-            <div class="infoBox">
+            <h2 className="sectionTitle">Courses at Cantor College</h2>
+            <div className="sectionInfo">
+            <div className="infoBox">
                 <h3>Computing Courses</h3>
                 <p>
                     The College offers a range of courses to suit applicants with varying backgrounds and educational abilities. 
@@ -130,7 +131,7 @@ useEffect(()=>{
                     Many graduates continue their studies to pursue a higher degree such as an MSc. or PhD.
                 </p>
             </div>
-            <div class="infoBox">
+            <div className="infoBox">
                 <h3>Design Courses</h3>
                 <p>
                     The College is an internationally connected creative community of diverse disciplines housed under one roof. 
@@ -145,6 +146,7 @@ cultural institutions, businesses and organisations.
                 </p>
             </div>
         </div>
+        <CourseList></CourseList>
         </div>
     )
 }

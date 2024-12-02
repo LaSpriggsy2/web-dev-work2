@@ -39,7 +39,7 @@ header{
   }
 
   .navigationBar{
-    background-image: url(../images/background.jpg);
+    background-image: url(/images/background.jpg);
     background-clip: padding-box;
     background-size: cover;
     display:flex;

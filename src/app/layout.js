@@ -78,13 +78,13 @@ const Home = () =>{
       }
     }
     let aboutUsImageAr = [
-      './images/cantorPic2.jpg',
-      './images/cantorPic1.jpg'
+      './images/cantorPic1.jpg',
+      './images/cantorPic2.jpg'
       
     ];
     let aboutUsImage = document.getElementById("cantorPics");
 let imageCounter1 = 0;
-aboutUsImage.setAttribute("src", "images/cantorPic1.jpg")
+// aboutUsImage.setAttribute("src", "/images/cantorPic1.jpg")
 function chgAboutUsImage(){
     if(imageCounter1 == aboutUsImageAr.length){imageCounter1=0;}
     aboutUsImage.setAttribute("src", aboutUsImageAr[imageCounter1]);
@@ -99,7 +99,7 @@ setInterval(chgAboutUsImage, 10000);
   <body>
     <header>
     <div className="homepageHeader">
-        <img src="/images/logo.jpg" width="112px" height="100px" alt="cantor college logo" className="cantorLogo"/>
+        <Image src="/images/logo.jpg" width="112" height="100" alt="cantor college logo" className="cantorLogo"/>
         <h1 className="cantorTitle">Cantor Home</h1>
       </div>
       <div className="navigationBar">
@@ -133,7 +133,7 @@ setInterval(chgAboutUsImage, 10000);
 <div className="infoBox" id="welcomeBox">
 <h2 id="aboutUsTitle"><b>About Us</b></h2>
   
-  <Image src="" alt="image of cantor college" width="1000" height="750" 
+  <img src="/images/cantorPic2.jpg" alt="image of cantor college" width="1000" height="750" 
 className="welcomeImage" id="cantorPics" />
 
 <p id="welcomeText">

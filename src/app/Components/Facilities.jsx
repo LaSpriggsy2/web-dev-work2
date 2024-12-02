@@ -39,7 +39,7 @@ setInterval(chgFacilitiesImage, 5000);
                 </p>
 
             </div>
-            <img src="" width="1080" height="720" alt="Cantor college atrium" className="decorativeImage" id="cantorAtrium"/>
+            <img src="/images/cantorAtriumInside1.jpg" width="1080" height="720" alt="Cantor college atrium" className="decorativeImage" id="cantorAtrium"/>
             <div className="infoBox" id="facilitiesList">
                 <h3>Facilities include:</h3>
                 <ul className="bulletPoints">
